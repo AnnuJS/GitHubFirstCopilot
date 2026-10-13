@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: rgba(15, 23, 42, 0.8);
+        --text: #e2e8f0;
+        --accent: #38bdf8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #020617 0%, #0f172a 45%, #1d4ed8 100%);
+        color: var(--text);
+      }
+
+      .card {
+        text-align: center;
+        padding: 3rem 4rem;
+        border-radius: 20px;
+        background: var(--panel);
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(8px);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      p {
+        margin: 1rem 0 0;
+        font-size: 1.05rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(226, 232, 240, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Hello, World!</h1>
+      <p>Welcome to your first page</p>
+    </main>
+  </body>
+</html>
